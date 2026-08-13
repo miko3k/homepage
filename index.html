@@ -1,11 +1,86 @@
-<!doctype html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Hi</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Peter Hanula — Software Developer</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      background:
+        radial-gradient(circle at 20% 20%, #243b55 0, transparent 35%),
+        radial-gradient(circle at 80% 80%, #3a1c71 0, transparent 35%),
+        #0d1117;
+      color: #f0f6fc;
+      font-family: sans-serif;
+    }
+
+    .card {
+      max-width: 760px;
+    }
+
+    .prompt {
+      color: #7ee787;
+      font-family: monospace;
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(3rem, 10vw, 7rem);
+      line-height: 0.95;
+      letter-spacing: -0.06em;
+    }
+
+    h1 span {
+      color: #58a6ff;
+    }
+
+    p {
+      margin: 28px 0 0;
+      max-width: 620px;
+      font-size: clamp(1.2rem, 3vw, 1.7rem);
+      line-height: 1.5;
+      color: #b1bac4;
+    }
+
+    .cursor {
+      display: inline-block;
+      width: 0.6em;
+      height: 1em;
+      margin-left: 5px;
+      vertical-align: -0.12em;
+      background: #7ee787;
+      animation: blink 1s steps(1) infinite;
+    }
+
+
+    @keyframes blink {
+      50% {
+        opacity: 0;
+      }
+    }
+  </style>
 </head>
+
 <body>
-    <h1>Hi</h1>
-    <p>Hi, I'm Peter, nice to meet you</p>
+  <main class="card">
+    <h1>
+      Hello, I'm<br />
+      <span>Peter Hanula.</span>
+    </h1>
+
+    <p>
+      I make stuff<span class="cursor"></span>
+    </p>
+  </main>
 </body>
 </html>
